@@ -7,8 +7,8 @@ def generate_hash(s : str):
     m = 1e9 + 9
     p_pow = 1
     hash_value = 0
-    for chr in s:
-        hash_value = (hash_value + d[chr] * p_pow) % m
+    for c in s:
+        hash_value = (hash_value + d[c] * p_pow) % m
         p_pow = (p_pow * p)
     return int(hash_value)
 
